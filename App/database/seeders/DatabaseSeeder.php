@@ -12,7 +12,7 @@ use Modules\PkgApprenant\Database\Seeders\ApprenantGroupeSeeder;
 use Modules\PkgSanction\Database\Seeders\SanctionAbsencesSeeder;
 use Modules\PkgSanction\Database\Seeders\ReglesDeSanctionsSeeder;
 use Modules\PkgSanction\Database\Seeders\SanctionAbsencesPrevisionnellesSeeder;
-use Modules\PkgSanction\Database\Seeders\SanctionAbsencesSeeder;
+use modules\PkgEntretienInscrition\Database\Seeders\PkgEntretienInscritionDatabaseSeeder;
 
 class DatabaseSeeder extends Seeder
 {
