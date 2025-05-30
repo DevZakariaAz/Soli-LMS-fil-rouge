@@ -11,13 +11,9 @@ class Seance extends Model
     use HasFactory;
 
     protected $fillable = [
-        'duree_seance_id',
+        'date_debut',
+        'date_fin',
     ];
-
-    public function duree()
-    {
-        return $this->belongsTo(DureeSeance::class);
-    }
 
     public function absences()
     {

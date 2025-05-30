@@ -23,6 +23,9 @@ class CreateAbsencesTable extends Migration
             // ✅ Justification booléenne
             $table->boolean('justifie')->default(false);
 
+            // 📅 Date de début de l’absence
+            $table->date('date_debut');
+
             // 🟠 Sanction réelle
             $table->foreignId('sanction_absence_id')->nullable()->constrained('sanction_absences')->nullOnDelete();
 

@@ -15,16 +15,18 @@ class Absence extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id', // 👤 surveillant qui saisit l’absence
-        'apprenant_id', // 👨‍🎓 apprenant concerné par l’absence
+        'user_id', // surveillant qui saisit l’absence
+        'apprenant_id', // apprenant concerné par l’absence
         'seance_id',
         'justifie',
+        'date_debut',
         'sanction_absence_id',
         'sanction_absence_previsionnelle_id',
     ];
 
     protected $casts = [
         'justifie' => 'boolean',
+        'date_debut' => 'date',
     ];
 
     // 👤 Utilisateur (surveillant) qui saisit l’absence

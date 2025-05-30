@@ -37,7 +37,6 @@ class DatabaseSeeder extends Seeder
             ApprenantGroupeSeeder::class,
             DatabaseSeederJustificatif::class,
             ReglesDeSanctionsSeeder::class,
-            DureeSeancesSeeder::class,
             SeancesSeeder::class,
             SanctionAbsencesSeeder::class,
             SanctionAbsencesPrevisionnellesSeeder::class,
