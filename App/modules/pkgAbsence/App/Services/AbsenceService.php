@@ -20,6 +20,7 @@ class AbsenceService
             'apprenantsPlus3AbsencesNonJustifiees'    => $this->getApprenantsWithMoreThan3UnjustifiedAbsences(),
         ];
     }
+    // fonction de total absences today 
     public function getTotalAbsencesToday(): int
     {
         return Absence::whereHas('seance', function ($query) {
